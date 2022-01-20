@@ -9,4 +9,7 @@ func main() {
 	var jellybeanCounter int8
 	jellybeanCounter +=1
 	fmt.Println(jellybeanCounter)
+
+	var flavorScale float32 = 5.8
+	fmt.Println(flavorScale)
 }
