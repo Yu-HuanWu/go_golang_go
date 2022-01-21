@@ -12,4 +12,7 @@ func main() {
 
 	var flavorScale float32 = 5.8
 	fmt.Println(flavorScale)
+
+	var nameOfSong string = "The Final Countdown"
+	fmt.Println("Gob's theme song is " + nameOfSong)
 }
