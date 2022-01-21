@@ -15,4 +15,9 @@ func main() {
 
 	var nameOfSong string = "The Final Countdown"
 	fmt.Println("Gob's theme song is " + nameOfSong)
+
+	var emptyInt int8
+	var emptyFloat float32
+	var emptyString string
+	fmt.Println(emptyInt, emptyFloat, emptyString)
 }
