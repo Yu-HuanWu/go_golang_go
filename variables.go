@@ -20,4 +20,8 @@ func main() {
 	var emptyFloat float32
 	var emptyString string
 	fmt.Println(emptyInt, emptyFloat, emptyString)
+
+	daysOnVacation := 7
+	var hoursInDay = 24
+	fmt.Println("You have spent", daysOnVacation * hoursInDay, "hours on vacation.")
 }
