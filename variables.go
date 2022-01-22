@@ -1,6 +1,7 @@
 package main
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -24,4 +25,8 @@ func main() {
 	daysOnVacation := 7
 	var hoursInDay = 24
 	fmt.Println("You have spent", daysOnVacation * hoursInDay, "hours on vacation.")
+
+	var cupsOfCoffeeConsumed int
+	cupsOfCoffeeConsumed= 10
+	fmt.Println("I've had " + strconv.Itoa(cupsOfCoffeeConsumed) + " of coffee today!") 
 }
