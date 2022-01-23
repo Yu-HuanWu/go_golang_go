@@ -29,4 +29,12 @@ func main() {
 	var cupsOfCoffeeConsumed int
 	cupsOfCoffeeConsumed= 10
 	fmt.Println("I've had " + strconv.Itoa(cupsOfCoffeeConsumed) + " of coffee today!") 
+
+	coolSneakers := 65.99
+  	niceNecklace := 45.50
+	var taxCalculation float64
+	taxCalculation += coolSneakers
+	taxCalculation += niceNecklace
+	taxCalculation *= 0.08875
+	fmt.Println("Purchase of", coolSneakers + niceNecklace, "with 8.875% sales tax", taxCalculation, "equal to", coolSneakers + niceNecklace + taxCalculation)
 }
