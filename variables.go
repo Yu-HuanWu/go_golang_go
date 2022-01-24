@@ -37,4 +37,11 @@ func main() {
 	taxCalculation += niceNecklace
 	taxCalculation *= 0.08875
 	fmt.Println("Purchase of", coolSneakers + niceNecklace, "with 8.875% sales tax", taxCalculation, "equal to", coolSneakers + niceNecklace + taxCalculation)
+
+	var magicNum, powerLevel int32
+	magicNum= 42
+	powerLevel= 9001
+	fmt.Println("magicNum is:", magicNum, "powerLevel is:", powerLevel)
+	amount, unit := 10, "doll hairs"
+	fmt.Println(amount, unit, ", that's expensive...")
 }
