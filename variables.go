@@ -44,4 +44,13 @@ func main() {
 	fmt.Println("magicNum is:", magicNum, "powerLevel is:", powerLevel)
 	amount, unit := 10, "doll hairs"
 	fmt.Println(amount, unit, ", that's expensive...")
+
+	var congrats string
+	congrats = "Congratulations"
+	congrats += "!!!"
+	fmt.Println(congrats)
+	var challenge string = "What else can you do?"
+	fmt.Println(challenge)
+	reminder := "Pratice is important!"
+	fmt.Println(reminder)
 }
