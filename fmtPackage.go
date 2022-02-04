@@ -28,4 +28,8 @@ func main() {
 	step2 := "Breathe out..."
 	meditation := fmt.Sprintln(step1, step2)
 	fmt.Println(meditation)
+
+	template := "I wish I had a %v."
+	pet := "puppy"
+	var wish string
 }
