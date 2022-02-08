@@ -9,4 +9,10 @@ func main() {
 	} else {
 		fmt.Println("uh-oh")
 	}
+
+	lockCombo := "2-35-19"
+	robAttempt := "1-1-1"
+	if (lockCombo == robAttempt) {
+	fmt.Println("The vault is now opened.")
+	}
 }
