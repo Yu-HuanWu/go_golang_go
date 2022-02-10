@@ -20,4 +20,19 @@ func main() {
 	if (vaultAmt >= 200000) {
 		fmt.Println("We're going to need more bags.")
 	}
+
+	rightTime := true
+	rightPlace := true
+	if rightTime && rightPlace {
+		fmt.Println("We're outta here!")
+	} else {
+		fmt.Println("Be patient...")
+	}
+	enoughRobbers := false
+	enoughBags := true
+	if enoughRobbers || enoughBags {
+		fmt.Println("Grab everything!")
+	} else {
+		fmt.Println("Grab whatever you can!")
+	}
 }
