@@ -35,4 +35,11 @@ func main() {
 	} else {
 		fmt.Println("Grab whatever you can!")
 	}
+
+	readyToGo := true
+	if !readyToGo {
+		fmt.Println("Start the car!")
+	} else {
+		fmt.Println("What are we waiting for??")
+	}
 }
