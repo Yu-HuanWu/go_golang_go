@@ -61,4 +61,19 @@ func main() {
 	default:
 		fmt.Println("Just hide!")
 	}
+	
+	if success := true; success {
+		fmt.Println("We're rich!")
+	} else {
+		fmt.Println("Where did we go wrong?")
+	}
+	amountStolen := 50000
+	switch numOfThieves := 3; {
+	case numOfThieves==1:
+		fmt.Println("I'll take all $", amountStolen)
+	case numOfThieves < 6:
+	  fmt.Println("Everyone gets $", amountStolen/numOfThieves)
+	default:
+		fmt.Println("There's not enough to go around...")
+	}
 }
