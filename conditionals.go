@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	heistReady := false
@@ -61,19 +64,27 @@ func main() {
 	default:
 		fmt.Println("Just hide!")
 	}
-	
+
 	if success := true; success {
 		fmt.Println("We're rich!")
 	} else {
 		fmt.Println("Where did we go wrong?")
 	}
-	amountStolen := 50000
+	amountStolen2 := 50000
 	switch numOfThieves := 3; {
 	case numOfThieves==1:
-		fmt.Println("I'll take all $", amountStolen)
+		fmt.Println("I'll take all $", amountStolen2)
 	case numOfThieves < 6:
-	  fmt.Println("Everyone gets $", amountStolen/numOfThieves)
+	  fmt.Println("Everyone gets $", amountStolen2/numOfThieves)
 	default:
 		fmt.Println("There's not enough to go around...")
+	}
+
+	amountLeft := rand.Intn(10000)
+	fmt.Println("amountLeft is: ", amountLeft)
+	if amountLeft > 5000 {
+		fmt.Println("What should I spend this on?")
+	} else {
+		fmt.Println("Where did all my money go?")
 	}
 }
