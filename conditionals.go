@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
@@ -80,6 +81,7 @@ func main() {
 		fmt.Println("There's not enough to go around...")
 	}
 
+	rand.Seed(time.Now().UnixNano())
 	amountLeft := rand.Intn(10000)
 	fmt.Println("amountLeft is: ", amountLeft)
 	if amountLeft > 5000 {
