@@ -89,4 +89,10 @@ func main() {
 	} else {
 		fmt.Println("Where did all my money go?")
 	}
+
+	if lessonLearned := true; lessonLearned {
+		fmt.Println("Great job! You can continue on to the next exercise.")
+	} else {
+		fmt.Println("Practice makes perfect.")
+	}
 }
