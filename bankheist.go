@@ -17,5 +17,14 @@ func main() {
     	isHeistOn = false
     	fmt.Println("Plan a better disguise next time?")
  	}
+
+	openedVault := rand.Intn(100)
+	if isHeistOn && openedVault >= 70 {
+		fmt.Println("Grab and GO!")
+	} else if isHeistOn {
+		isHeistOn = false;
+		fmt.Println("Vault can't be opened!")
+	}
+	
 	fmt.Println("is the heist currently on?", isHeistOn)
 }
