@@ -25,6 +25,23 @@ func main() {
 		isHeistOn = false;
 		fmt.Println("Vault can't be opened!")
 	}
-	
+
+	leftSafely := rand.Intn(5)
+	if isHeistOn {
+		switch leftSafely {
+			case 0:
+				isHeistOn = false;
+				fmt.Println("Looks like you tripped an alarm... run?");
+			case 1:
+				isHeistOn = false;
+				fmt.Println("Turns out vault doors don't open from the inside...");
+			case 2: 
+				isHeistOn = false;
+				fmt.Println("You forgot to shower and the guards were able to smell you!");
+			default:
+				fmt.Println("Start the gataway car!");
+		}
+	}
+
 	fmt.Println("is the heist currently on?", isHeistOn)
 }
