@@ -47,6 +47,6 @@ func main() {
 		amtStolen := 10000 + rand.Intn(1000000);
 		fmt.Println("We stole", amtStolen, "dollars!")
 	}
-
+	fmt.Println(time.Now().Weekday())
 	fmt.Println("is the heist currently on?", isHeistOn)
 }
