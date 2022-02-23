@@ -43,5 +43,10 @@ func main() {
 		}
 	}
 
+	if isHeistOn {
+		amtStolen := 10000 + rand.Intn(1000000);
+		fmt.Println("We stole", amtStolen, "dollars!")
+	}
+
 	fmt.Println("is the heist currently on?", isHeistOn)
 }
