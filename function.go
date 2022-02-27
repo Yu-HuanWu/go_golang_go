@@ -31,8 +31,15 @@ func isItLateInNewYork() string {
   return lateMessage
 }
 
+func computeMarsYears(earthYears int) int {
+  earthDays := earthYears * 365
+  marsYears := earthDays / 687
+  return marsYears
+}
+
 func main() {
   eatTacos()
   startGame()
   fmt.Println(isItLateInNewYork())
+  fmt.Println("On Mars I am", computeMarsYears(33), "years old!")
 }
