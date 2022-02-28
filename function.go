@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"time"
+	"math"
 )
 
 func eatTacos() {
@@ -37,9 +38,18 @@ func computeMarsYears(earthYears int) int {
   return marsYears
 }
 
+func specialComputation(x float64) float64 {
+  return math.Log2(math.Sqrt(math.Tan(x)))
+}
+
+func combinedSpecialComputation(a, b, c, d float64) (float64, float64, float64, float64) {
+	return specialComputation(a), specialComputation(b), specialComputation(c), specialComputation(d)
+}
+
 func main() {
   eatTacos()
   startGame()
   fmt.Println(isItLateInNewYork())
   fmt.Println("On Mars I am", computeMarsYears(33), "years old!")
+  fmt.Println(combinedSpecialComputation(.0214, 1.02, 0.312, 4.001))
 }
