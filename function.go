@@ -66,6 +66,26 @@ func getLikesAndShares(postId int) (int, int){
   return likesForPost, sharesForPost
 }
 
+func queryDatabase(query string) string {
+  var result string
+  connectDatabase()
+  defer disconnectDatabase() 
+
+  if query == "SELECT * FROM coolTable;" {
+    result = "NAME|DOB\nVincent Van Gogh|March 30, 1853"
+  }  
+  fmt.Println(result)
+  return result
+}
+
+func connectDatabase() {
+  fmt.Println("Connecting to the database.")
+}
+
+func disconnectDatabase() {
+  fmt.Println("Disconnecting from the database.")
+}
+
 func main() {
   eatTacos()
   startGame()
@@ -81,4 +101,6 @@ func main() {
   if shares > 10 {
     fmt.Println("We went viral!")
   }
+
+  queryDatabase("SELECT * FROM coolTable;")
 }
