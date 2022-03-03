@@ -86,6 +86,18 @@ func disconnectDatabase() {
   fmt.Println("Disconnecting from the database.")
 }
 
+func joinTwoStrings(first string, second string) string {
+  return first + second
+}
+
+func waitForIt(message string) {
+  defer fmt.Println("Done!")
+  fmt.Println("Waiting")
+  fmt.Println("Waiting")
+  fmt.Println("Waiting")
+  fmt.Println(message)
+}
+
 func main() {
   eatTacos()
   startGame()
@@ -103,4 +115,6 @@ func main() {
   }
 
   queryDatabase("SELECT * FROM coolTable;")
+
+  waitForIt(joinTwoStrings("Hello", " there"))
 }
