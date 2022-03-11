@@ -35,9 +35,8 @@ func cantFly() {
 
 // Create the function flyToPlanet() here
 func flyToPlanet(planet string, fuel int) int {
-	if {
-		
-	}
+	var fuelRemaining, fuelCost int
+	fuelRemaining = fuel
 }
 
 func main() {
