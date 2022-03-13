@@ -41,6 +41,8 @@ func flyToPlanet(planet string, fuel int) int {
 	if fuelRemaining >= fuelCost {
 		greetPlanet(planet)
 		fuelRemaining -= fuelCost
+	} else {
+		cantFly()
 	}
 }
 
