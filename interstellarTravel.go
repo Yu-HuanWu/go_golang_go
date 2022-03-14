@@ -44,11 +44,12 @@ func flyToPlanet(planet string, fuel int) int {
 	} else {
 		cantFly()
 	}
+	return fuelRemaining
 }
 
 func main() {
   // Test your functions!
-  greetPlanet("Mars")
+  fmt.Println(flyToPlanet("Mercury", 700000))
   // Create `planetChoice` and `fuel`
   
   // And then liftoff!
