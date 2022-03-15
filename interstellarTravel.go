@@ -48,10 +48,9 @@ func flyToPlanet(planet string, fuel int) int {
 }
 
 func main() {
-  // Test your functions!
-  fmt.Println(flyToPlanet("Mercury", 700000))
   // Create `planetChoice` and `fuel`
-  
+  fuel := 1000000
+  planetChoice := "Venus"
   // And then liftoff!
   
 }
