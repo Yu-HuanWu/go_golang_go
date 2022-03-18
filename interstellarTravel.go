@@ -48,11 +48,16 @@ func flyToPlanet(planet string, fuel int) int {
 }
 
 func main() {
-  // Create `planetChoice` and `fuel`
   fuel := 1000000
   planetChoice := "Venus"
   fuel = flyToPlanet(planetChoice, fuel)
   fuelGauge(fuel)
-  // And then liftoff!
-  
+  switch planetChoice {
+	case "Venus":
+		fmt.Println("we hope you enjoy Venus")
+	case "Mars":
+		fmt.Println("Red Planet, best planet")
+	default:
+		fmt.Println("where even are you?")
+  }
 }
