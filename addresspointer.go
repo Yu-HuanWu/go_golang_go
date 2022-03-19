@@ -10,6 +10,8 @@ func main() {
   x := 1
   
   addHundred(x)
-  
   fmt.Println(x) 
+
+  	treasure := "The friends we make along the way."
+	fmt.Println(&treasure)
 }
