@@ -14,4 +14,6 @@ func main() {
 
   	treasure := "The friends we make along the way."
 	fmt.Println(&treasure)
+
+	star := "Polaris"
 }
