@@ -16,4 +16,6 @@ func main() {
 	fmt.Println(&treasure)
 
 	star := "Polaris"
+	starAddress := &star
+	fmt.Println("The address of star is", starAddress)
 }
