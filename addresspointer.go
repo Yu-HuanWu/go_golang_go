@@ -18,4 +18,6 @@ func main() {
 	star := "Polaris"
 	starAddress := &star
 	fmt.Println("The address of star is", starAddress)
+	*starAddress = "Sirius"
+	fmt.Println("The actual value of star is", star)
 }
