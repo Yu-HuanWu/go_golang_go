@@ -6,6 +6,10 @@ func addHundred(num int) {
   num += 100
 }
 
+func brainwash(saying string) {
+	saying = "Beep Boop."
+}
+
 func main() {
   x := 1
   
