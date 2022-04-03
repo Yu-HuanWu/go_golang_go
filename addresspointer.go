@@ -10,6 +10,14 @@ func brainwash(saying *string) {
 	*saying = "Beep Boop."
 }
 
+func oppositeDay(boolean *bool) {
+	if *boolean == true {
+		*boolean = false
+	} else {
+		*boolean = true
+	}
+}
+
 func main() {
   x := 1
   
@@ -28,4 +36,8 @@ func main() {
 	greeting := "Hello there!"
 	brainwash(&greeting)
 	fmt.Println("greeting is now:", greeting)
+
+	trueVar := true
+	oppositeDay(&trueVar)
+	fmt.Println("true is now:", trueVar)
 }
