@@ -18,6 +18,10 @@ func oppositeDay(boolean *bool) {
 	}
 }
 
+func interestRate(percent *float64) {
+	*percent = *percent * 1.2
+}
+
 func main() {
   x := 1
   
@@ -40,4 +44,8 @@ func main() {
 	trueVar := true
 	oppositeDay(&trueVar)
 	fmt.Println("true is now:", trueVar)
+
+	currentInterestRate := 5.6
+	interestRate(&currentInterestRate)
+	fmt.Println("the new interest rate is:", currentInterestRate)
 }
