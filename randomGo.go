@@ -14,4 +14,6 @@ func main() {
 		time.Sleep(dur)
 	}
 	fmt.Println("Done!")
+
+	fmt.Println("The time is", time.Now())
 }
