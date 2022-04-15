@@ -17,4 +17,5 @@ func main() {
 
 	fmt.Println("The time is", time.Now())
 	fmt.Println(time.Duration(rand.Intn(1000)))
+	fmt.Println(time.Duration(rand.Intn(10)))
 }
