@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"math"
 	"time"
 )
 
 func main() {
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
 		fmt.Printf("Sleeping for %v\n", dur)
 		// Sleep for a random duration between 0-1000ms
@@ -18,4 +19,5 @@ func main() {
 	fmt.Println("The time is", time.Now())
 	fmt.Println(time.Duration(rand.Intn(1000)))
 	fmt.Println(time.Duration(rand.Intn(10)))
+	fmt.Println(math.Pi)
 }
