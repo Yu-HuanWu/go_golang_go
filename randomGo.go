@@ -15,6 +15,12 @@ func swap(x, y string) (string, string) {
 	return y, x
 }
 
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
@@ -30,4 +36,6 @@ func main() {
 
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
+
+	fmt.Println(split(29))
 }
