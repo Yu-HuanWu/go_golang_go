@@ -21,6 +21,8 @@ func split(sum int) (x, y int) {
 	return
 }
 
+var c, python, java bool
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
@@ -38,4 +40,7 @@ func main() {
 	fmt.Println(a, b)
 
 	fmt.Println(split(29))
+
+	var i int
+	fmt.Println(i, c, python, java)
 }
