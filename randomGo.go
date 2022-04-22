@@ -21,7 +21,7 @@ func split(sum int) (x, y int) {
 	return
 }
 
-var c, python, java bool
+var c, python, java = true, false, "no!"
 
 func main() {
 	for i := 0; i < 5; i++ {
