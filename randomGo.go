@@ -43,4 +43,8 @@ func main() {
 
 	var i int
 	fmt.Println(i, c, python, java)
+
+	var j, k int = 1, 2
+	l := 3
+	fmt.Println(j, k, l)
 }
