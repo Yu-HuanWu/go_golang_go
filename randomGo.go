@@ -61,4 +61,7 @@ func main() {
 
 	var s string
 	fmt.Printf("%q\n", s)
+
+	v := 0.867 + 0.5i
+	fmt.Printf("v is of type %T\n", v)
 }
