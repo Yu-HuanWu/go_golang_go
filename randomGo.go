@@ -30,6 +30,11 @@ var (
 	z      complex128 = cmplx.Sqrt(-5 + 12i)
 )
 
+func needInt(x int) int { return x*10 + 1 }
+func needFloat(x float64) float64 {
+	return x * 0.1
+}
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
