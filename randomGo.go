@@ -83,4 +83,8 @@ func main() {
 
 	const Truth = true
 	fmt.Println("Go rules?", Truth)
+
+	fmt.Println(needInt(Small))
+	fmt.Println(needFloat(Small))
+	fmt.Println(needFloat(Big))
 }
