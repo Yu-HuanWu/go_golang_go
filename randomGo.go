@@ -87,4 +87,10 @@ func main() {
 	fmt.Println(needInt(Small))
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
+
+	factorial := 1
+	for i := 1; i < 10; i++ {
+		factorial *= i
+	}
+	fmt.Println(factorial)
 }
