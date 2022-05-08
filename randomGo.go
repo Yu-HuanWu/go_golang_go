@@ -43,6 +43,13 @@ func needFloat(x float64) float64 {
 	return x * 0.1
 }
 
+func sqrt(x float64) string {
+	if x < 0 {
+		return sqrt(-x) + "i"
+	}
+	return fmt.Sprint(math.Sqrt(x))
+}
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
@@ -105,4 +112,6 @@ func main() {
 		sum2 += sum2
 	}
 	fmt.Println(sum2)
+
+	fmt.Println(sqrt(2), sqrt(-4))
 }
