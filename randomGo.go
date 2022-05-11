@@ -6,6 +6,7 @@ import (
 	"math"
 	"math/cmplx"
 	"time"
+	"runtime"
 )
 
 func add(x, y int) int {
@@ -128,4 +129,14 @@ func main() {
 		pow(3, 2, 10),
 		pow(3, 3, 20),
 	)
+
+	fmt.Print("Go runs on ")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("OS X.")
+	case "linux":
+		fmt.Println("Linux.")
+	default:
+		fmt.Printf("%s.\n", os)
+	}
 }
