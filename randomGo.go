@@ -155,6 +155,8 @@ func main() {
 
 	t := time.Now()
 	switch {
+	case t.Hour() == 12:
+		fmt.Println("Lunch Time!")
 	case t.Hour() < 12:
 		fmt.Println("Good morning!")
 	case t.Hour() < 17:
