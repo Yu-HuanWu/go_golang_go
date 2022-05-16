@@ -164,4 +164,8 @@ func main() {
 	default:
 		fmt.Println("Good evening.")
 	}
+
+	//.. last
+	defer fmt.Println("world")
+	fmt.Println("hello")
 }
