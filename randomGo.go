@@ -60,6 +60,11 @@ func pow(x, n, lim float64) float64 {
 	return lim
 }
 
+type Vertex struct {
+	X int
+	Y int
+}
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
@@ -176,13 +181,15 @@ func main() {
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) // see the new value of j
 
+	fmt.Println(Vertex{1, 2})
+
+	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
 		defer fmt.Println(i)
 	}
 	fmt.Println("done")
 
-	//.. last
 	defer fmt.Println("world")
 	fmt.Println("hello")
 }
