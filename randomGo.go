@@ -170,18 +170,21 @@ func main() {
 		fmt.Println("Good evening.")
 	}
 
-	i, j := 42, 2701
+	i1, j1 := 42, 2701
 
-	p := &i         // point to i
-	fmt.Println(*p) // read i through the pointer
-	*p = 21         // set i through the pointer
-	fmt.Println(i)  // see the new value of i
+	p := &i1         // point to i1
+	fmt.Println(*p) // read i1 through the pointer
+	*p = 21         // set i1 through the pointer
+	fmt.Println(i1)  // see the new value of i1
 
-	p = &j         // point to j
-	*p = *p / 37   // divide j through the pointer
-	fmt.Println(j) // see the new value of j
+	p = &j1         // point to j1
+	*p = *p / 37   // divide j1 through the pointer
+	fmt.Println(j1) // see the new value of j1
 
 	fmt.Println(Vertex{1, 2})
+	ver := Vertex{1, 2}
+	ver.X = 4
+	fmt.Println(ver.X)
 
 	//.. last
 	fmt.Println("counting")
