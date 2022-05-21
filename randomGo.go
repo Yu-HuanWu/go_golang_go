@@ -186,6 +186,10 @@ func main() {
 	ver.X = 4
 	fmt.Println(ver.X)
 
+	p2 := &ver
+	p2.X = 1e9
+	fmt.Println(ver)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
