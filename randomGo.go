@@ -190,6 +190,12 @@ func main() {
 	p2.X = 1e9
 	fmt.Println(ver)
 
+	v1 := Vertex{1, 2}  // has type Vertex
+	v2 := Vertex{X: 1}  // Y:0 is implicit
+	v3 := Vertex{}      // X:0 and Y:0
+	p3 := &Vertex{1, 2} // has type *Vertex
+	fmt.Println(v1, p3, v2, v3)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
