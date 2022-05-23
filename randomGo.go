@@ -196,6 +196,15 @@ func main() {
 	p3 := &Vertex{1, 2} // has type *Vertex
 	fmt.Println(v1, p3, v2, v3)
 
+	var arr [2]string
+	arr[0] = "Hello"
+	arr[1] = "World"
+	fmt.Println(arr[0], arr[1])
+	fmt.Println(arr)
+
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
