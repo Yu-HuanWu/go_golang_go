@@ -207,6 +207,22 @@ func main() {
 	var slicedPrimes []int = primes[1:4]
 	fmt.Println(slicedPrimes)
 
+	beatlesNames := [4]string{
+		"John",
+		"Paul",
+		"George",
+		"Ringo",
+	}
+	fmt.Println(beatlesNames)
+
+	beatlesNamesA := beatlesNames[0:2]
+	beatlesNamesB := beatlesNames[1:3]
+	fmt.Println(beatlesNamesA, beatlesNamesB)
+
+	beatlesNamesB[0] = "XXX"
+	fmt.Println(beatlesNamesA, beatlesNamesB)
+	fmt.Println(beatlesNames)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
