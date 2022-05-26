@@ -223,6 +223,9 @@ func main() {
 	fmt.Println(beatlesNamesA, beatlesNamesB)
 	fmt.Println(beatlesNames)
 
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
