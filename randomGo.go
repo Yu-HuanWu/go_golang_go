@@ -226,6 +226,9 @@ func main() {
 	q := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println(q)
 
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
