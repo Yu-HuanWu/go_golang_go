@@ -229,6 +229,19 @@ func main() {
 	r := []bool{true, false, true, true, false, true}
 	fmt.Println(r)
 
+	sliceLiteral := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(sliceLiteral)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
