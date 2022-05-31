@@ -250,6 +250,9 @@ func main() {
 	sliceDefault = sliceDefault[:2]
 	fmt.Println(sliceDefault)
 
+	sliceDefault = sliceDefault[1:]
+	fmt.Println(sliceDefault)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
