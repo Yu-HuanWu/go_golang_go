@@ -257,6 +257,9 @@ func main() {
 	sliceDefault = sliceDefault[1:]
 	fmt.Println(sliceDefault)
 
+	sliceCapacity := []int{2, 3, 5, 7, 11, 13}
+	printSlice(sliceCapacity)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
