@@ -263,6 +263,10 @@ func main() {
 	sliceCapacity = sliceCapacity[:0]
 	printSlice(sliceCapacity)
 
+	// Extend its length.
+	sliceCapacity = sliceCapacity[:4]
+	printSlice(sliceCapacity)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
