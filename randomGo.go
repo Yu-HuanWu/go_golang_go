@@ -270,6 +270,12 @@ func main() {
 	sliceCapacity = sliceCapacity[2:]
 	printSlice(sliceCapacity)
 
+	var nilSlice []int
+	fmt.Println(nilSlice, len(nilSlice), cap(nilSlice))
+	if nilSlice == nil {
+		fmt.Println("nil!")
+	}
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
