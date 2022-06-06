@@ -276,6 +276,9 @@ func main() {
 		fmt.Println("nil!")
 	}
 
+	makeSlice := make([]int, 5)
+	printSlice(makeSlice)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
