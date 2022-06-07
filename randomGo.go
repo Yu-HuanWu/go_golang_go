@@ -276,8 +276,11 @@ func main() {
 		fmt.Println("nil!")
 	}
 
-	makeSlice := make([]int, 5)
-	printSlice(makeSlice)
+	makeSliceA := make([]int, 5)
+	printSlice(makeSliceA)
+
+	makeSliceB := make([]int, 0, 5)
+	printSlice(makeSliceB)
 
 	//.. last
 	fmt.Println("counting")
