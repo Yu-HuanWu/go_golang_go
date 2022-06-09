@@ -285,6 +285,9 @@ func main() {
 	makeSliceC := makeSliceB[:2]
 	printSlice(makeSliceC)
 
+	makeSliceD := makeSliceC[2:5]
+	printSlice(makeSliceD)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
