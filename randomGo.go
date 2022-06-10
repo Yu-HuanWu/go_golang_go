@@ -288,6 +288,16 @@ func main() {
 	makeSliceD := makeSliceC[2:5]
 	printSlice(makeSliceD)
 
+	// Create a tic-tac-toe board.
+	board := [][]string{
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+	}
+
+	// The players take turns.
+	board[0][0] = "X"
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
