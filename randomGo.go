@@ -7,6 +7,7 @@ import (
 	"math/cmplx"
 	"time"
 	"runtime"
+	"strings"
 )
 
 func add(x, y int) int {
@@ -297,6 +298,11 @@ func main() {
 
 	// The players take turns.
 	board[0][0] = "X"
+	board[2][2] = "O"
+
+	for i := 0; i < len(board); i++ {
+		fmt.Printf("%s\n", strings.Join(board[i], " "))
+	}
 
 	//.. last
 	fmt.Println("counting")
