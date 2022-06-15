@@ -70,6 +70,28 @@ func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 }
 
+func allSameStrings(a []string) bool {
+    for i := 1; i < len(a); i++ {
+        if a[i] != a[0] {
+            return false
+        }
+    }
+    return true
+}
+
+func checkVertical(board [][]string) {
+	for i := 0; i < len(board); i++ {
+		if allSameStrings(board[i]) {
+			fmt.Printf("%s Wins! \n", board[i][0])
+		}
+		// fmt.Printf("%s\n", strings.Join(board[i], " "))
+	}
+}
+
+func checkHorizontal(board [][]string) {
+	
+}
+
 func main() {
 	for i := 0; i < 5; i++ {
 		dur := time.Duration(rand.Intn(1000)) * time.Millisecond
@@ -307,6 +329,7 @@ func main() {
 	for i := 0; i < len(board); i++ {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 	}
+	checkVertical(board)
 
 	//.. last
 	fmt.Println("counting")
