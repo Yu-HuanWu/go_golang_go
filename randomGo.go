@@ -89,7 +89,7 @@ func checkVertical(board [][]string) {
 }
 
 func checkHorizontal(board [][]string) {
-	
+
 }
 
 func main() {
@@ -330,6 +330,7 @@ func main() {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 	}
 	checkVertical(board)
+	checkHorizontal(board)
 
 	//.. last
 	fmt.Println("counting")
