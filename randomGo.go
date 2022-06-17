@@ -89,7 +89,22 @@ func checkVertical(board [][]string) {
 }
 
 func checkHorizontal(board [][]string) {
-
+	for i := 0; i < len(board); i++ {
+		Xwins := 0
+		Owins := 0
+		for j := 0; j < len(board); j++ {
+			if board[j][i] == "X" {
+				Xwins = Xwins +1
+			} else if board[j][i] == "O" {
+				Owins = Owins +1
+			}
+		}
+		if Xwins == 3 {
+			fmt.Println("X Wins! \n")
+		} else if Owins == 3 {
+			fmt.Println("O Wins! \n")
+		}
+	}
 }
 
 func main() {
