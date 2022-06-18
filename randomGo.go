@@ -348,7 +348,8 @@ func main() {
 	checkHorizontal(board)
 
 	var appendSlice []int
-
+	printSlice(appendSlice)
+	appendSlice = append(appendSlice, 0)
 	printSlice(appendSlice)
 
 	//.. last
