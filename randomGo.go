@@ -347,6 +347,10 @@ func main() {
 	checkVertical(board)
 	checkHorizontal(board)
 
+	var appendSlice []int
+
+	printSlice(appendSlice)
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
