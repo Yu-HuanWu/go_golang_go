@@ -353,6 +353,8 @@ func main() {
 	printSlice(appendSlice)
 	appendSlice = append(appendSlice, 1)
 	printSlice(appendSlice)
+	appendSlice = append(appendSlice, 2, 3, 4)
+	printSlice(appendSlice)
 
 	//.. last
 	fmt.Println("counting")
