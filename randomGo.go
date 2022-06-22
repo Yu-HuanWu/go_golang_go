@@ -356,6 +356,8 @@ func main() {
 	appendSlice = append(appendSlice, 2, 3, 4)
 	printSlice(appendSlice)
 
+	var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
