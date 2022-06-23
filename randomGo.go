@@ -361,6 +361,11 @@ func main() {
 		fmt.Printf("2**%d = %d\n", index, value)
 	}
 
+	pow2 := make([]int, 10)
+	for i := range pow2 {
+		pow2[i] = 1 << uint(i) // == 2**i
+	}
+
 	//.. last
 	fmt.Println("counting")
 	for i := 0; i < 10; i++ {
